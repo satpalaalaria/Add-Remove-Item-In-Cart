@@ -2,7 +2,7 @@
 fetch('https://fakestoreapi.com/products').then(response=>{
     return response.json();
 }).then(data=>{
-    console.log(data);
+    // console.log(data);
     const products=data.map(product =>{
         const cards=`
             <div class="card">
@@ -12,18 +12,32 @@ fetch('https://fakestoreapi.com/products').then(response=>{
                 <h5 style="color: red;">Price:${product.price} &#8377</h5>
                 <label for="style" style="color: brown;">-:Description:-</label>
                 <p style="font-size: 10px;">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"</p>
-                <p><button>Add to Cart</button></p>
+                <button>Add to Cart</button>
             </div>
         `
         // console.log(product);
         const selectElement=document.querySelector('.card-deck');
         // console.log(selectElement);
         selectElement.insertAdjacentHTML('beforeend',cards)
-
+    
     });
+    var svg1=document.querySelector('h1');
+    // console.log(svg1);
+    var button=document.getElementsByTagName('button');
+    // console.log(button);
+    for (const i of button)
+    {
+        i.addEventListener('click',(e)=>{
+            // console.log("clicked")
+            var add=Number(svg1.getAttribute('data-count')|| 0);
+            svg1.setAttribute('data-count', add + 1);
+            svg1.classList.add('zero');
+        })
+    };
 }).catch(error=>{
     console.log(error);
 });
+
 
 
 
