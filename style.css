@@ -78,7 +78,7 @@ button:hover {
 .select{
     width: 40%;
     height: 600px;
-    background: rgb(57, 41, 41);
+    background: rgb(236, 230, 230);
     position: absolute;
     /* margin-top: 200rem; */
     top: -1000px;
@@ -86,37 +86,40 @@ button:hover {
     transition: 0.5s;
     overflow-y: auto;
     margin: auto;
+    /* width: 300px; */
+    border: 2px solid rgb(222, 212, 212);
+   
 }
 .select.display{
-    top: 10px;
+    top: 50px;
 }
-.select div{
+/* .select div{
     width: 100%;
     height: 300px;
     /* display: flex; */
-    padding: 5px;
+    /* padding: 5px;
     border: 1px solid white;
     position: relative;
     margin: 5px auto;
-    margin-top: 5rem;
-}
+    margin-top: 5rem; */
+/* } */
 
-.select div img{
+/* .select div img{
     width: 20% !important;
     height: auto !important;
-    display: block;
+    display: block; */
 
     /* border: 1px solid red; */
-    border-radius: 40%;
+    /* border-radius: 40%; */
     /* margin: 15px !important; */
-    margin: auto;
+    /* margin: auto; */
 
-}
-.select div h3{
+/* } */
+/* .select div h3{
     font-size: 10px !important;
     color: rgb(86, 1, 1) !important;
     position:absolute;
-}
+} */
 /* .select.title{
     position: absolute !important;
     top: 0;
@@ -125,3 +128,47 @@ button:hover {
 /* .select p{
     opacity: 0 !important;
 } */
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+/* .mainCard{
+    height: 60px;
+    width: 300px;
+    border: 2px solid rgb(222, 212, 212);
+    margin: auto;
+} */
+.card1{
+    margin: 5px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    /* margin-bottom: 1px; */
+    border: 1px solid rgb(0, 0, 0);
+}
+.imageControl >img{
+    width: 50px;
+    height: 50px;
+}
+.productName{
+    font-size: 10.5px;
+    font-style: italic;
+}
+.removeButton{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    border-radius: 5px;
+    /* padding: 8px; */
+    color: white;
+    background-color: rgb(177, 34, 34);
+    text-align: center;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    font-size: 10px;    
+}
+
